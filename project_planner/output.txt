@@ -1,0 +1,282 @@
+Project Name: buildgarage.txt
+
+Time: 0
+			Starting: 1
+			Current staff: 1
+Time: 14280
+			Finished: 1
+			Starting: 2
+			Starting: 3
+			Current staff: 4
+Time: 14284
+			Finished: 2
+			Current staff: 3
+Time: 230182
+			Finished: 3
+			Starting: 4
+			Current staff: 2
+Time: 262316
+			Finished: 4
+			Starting: 5
+			Starting: 6
+			Starting: 7
+			Current staff: 6
+Time: 262331
+			Finished: 7
+			Current staff: 5
+Time: 262458
+			Finished: 6
+			Current staff: 4
+Time: 303548
+			Finished: 5
+			Starting: 9
+			Starting: 11
+			Current staff: 6
+Time: 307873
+			Finished: 11
+			Starting: 12
+			Current staff: 8
+Time: 309675
+			Finished: 9
+			Starting: 10
+			Current staff: 7
+Time: 363997
+			Starting: 8
+			Finished: 10
+			Current staff: 6
+Time: 405242
+			Finished: 8
+			Current staff: 4
+Time: 429351
+			Finished: 12
+			Starting: 13
+			Current staff: 3
+Time: 430593
+			Finished: 13
+			Starting: 14
+			Current staff: 2
+Time: 484913
+			Finished: 14
+
+**** Shortest possible project execution is 484913 ****
+Task details: 
+
+ID: 1
+Name: get-paperwork
+Time: 14280
+Manpower: 1
+Earliest start: 0
+Slack: 0
+Successors: - 2 - 3 - 
+------------------------
+ID: 2
+Name: call-contractor
+Time: 4
+Manpower: 1
+Earliest start: 14280
+Slack: 215898
+Successors: - 4 - 
+------------------------
+ID: 3
+Name: clean-yard
+Time: 215902
+Manpower: 3
+Earliest start: 14280
+Slack: 0
+Successors: - 4 - 
+------------------------
+ID: 4
+Name: build-foundation
+Time: 32134
+Manpower: 2
+Earliest start: 230182
+Slack: 0
+Successors: - 7 - 6 - 5 - 
+------------------------
+ID: 5
+Name: build-wall-support
+Time: 41232
+Manpower: 4
+Earliest start: 262316
+Slack: 0
+Successors: - 9 - 11 - 8 - 
+------------------------
+ID: 6
+Name: lay-electrical-cables
+Time: 142
+Manpower: 1
+Earliest start: 262316
+Slack: 222455
+Successors: - 
+------------------------
+ID: 7
+Name: call-electrician
+Time: 15
+Manpower: 1
+Earliest start: 262316
+Slack: 181337
+Successors: - 8 - 
+------------------------
+ID: 8
+Name: install-electrical-gate-opener
+Time: 41245
+Manpower: 2
+Earliest start: 363997
+Slack: 79671
+Successors: - 
+------------------------
+ID: 9
+Name: build-walls
+Time: 6127
+Manpower: 4
+Earliest start: 303548
+Slack: 79671
+Successors: - 10 - 13 - 
+------------------------
+ID: 10
+Name: add-gate
+Time: 54322
+Manpower: 3
+Earliest start: 309675
+Slack: 79671
+Successors: - 8 - 
+------------------------
+ID: 11
+Name: build-stairs
+Time: 4325
+Manpower: 2
+Earliest start: 303548
+Slack: 0
+Successors: - 12 - 
+------------------------
+ID: 12
+Name: add-2nd-floor
+Time: 121478
+Manpower: 4
+Earliest start: 307873
+Slack: 0
+Successors: - 13 - 
+------------------------
+ID: 13
+Name: isolate-room
+Time: 1242
+Manpower: 3
+Earliest start: 429351
+Slack: 0
+Successors: - 14 - 
+------------------------
+ID: 14
+Name: furnish-appartment
+Time: 54320
+Manpower: 2
+Earliest start: 430593
+Slack: 0
+Successors: - 
+------------------------
+
+
+
+Project Name: buildhouse1.txt
+
+Time: 0
+			Starting: 5
+			Current staff: 2
+Time: 4
+			Starting: 1
+			Finished: 5
+			Starting: 6
+			Current staff: 4
+Time: 6
+			Finished: 6
+			Current staff: 2
+Time: 8
+			Finished: 1
+			Starting: 2
+			Current staff: 4
+Time: 14
+			Finished: 2
+			Starting: 3
+			Starting: 4
+			Starting: 7
+			Current staff: 7
+Time: 15
+			Finished: 3
+			Finished: 4
+			Current staff: 2
+Time: 18
+			Finished: 7
+			Starting: 8
+			Current staff: 4
+Time: 22
+			Finished: 8
+
+**** Shortest possible project execution is 22 ****
+Task details: 
+
+ID: 1
+Name: Build-walls
+Time: 4
+Manpower: 2
+Earliest start: 4
+Slack: 0
+Successors: - 2 - 3 - 
+------------------------
+ID: 2
+Name: Build-roofs
+Time: 6
+Manpower: 4
+Earliest start: 8
+Slack: 0
+Successors: - 4 - 7 - 3 - 
+------------------------
+ID: 3
+Name: Put-on-wallpapers
+Time: 1
+Manpower: 2
+Earliest start: 14
+Slack: 3
+Successors: - 8 - 
+------------------------
+ID: 4
+Name: Put-on-tiles
+Time: 1
+Manpower: 3
+Earliest start: 14
+Slack: 7
+Successors: - 
+------------------------
+ID: 5
+Name: Build-foundation
+Time: 4
+Manpower: 2
+Earliest start: 0
+Slack: 0
+Successors: - 1 - 6 - 
+------------------------
+ID: 6
+Name: Make-floor
+Time: 2
+Manpower: 2
+Earliest start: 4
+Slack: 8
+Successors: - 7 - 
+------------------------
+ID: 7
+Name: Put-carpet-floor
+Time: 4
+Manpower: 2
+Earliest start: 14
+Slack: 0
+Successors: - 8 - 
+------------------------
+ID: 8
+Name: Move-in
+Time: 4
+Manpower: 4
+Earliest start: 18
+Slack: 0
+Successors: - 
+------------------------
+
+
+
